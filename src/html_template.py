@@ -4,10 +4,10 @@ import os
 import shutil
 
 path = os.getcwd()
-print("Cartella corrente: %s" % path)
-check = input("Vuoi continuare in questa cartella? y/n ")
+print("Path directory: %s" % path)
+check = input("Do you want to continue in this directory? y/n ")
 if check in ['y', 'Y', 'yes', 'Yes', 'YES']:
-    name = input("Scegli nome progetto: ")
+    name = input("Insert project name: ")
     dirNomeProgetto = path + "/" + name
     dirCSS = dirNomeProgetto + "/CSS"
     dirJS = dirNomeProgetto + "/js"
@@ -86,4 +86,4 @@ body, html {
     f.close
     shutil.move(stylePath_tmp, styleCssPath)
 else:
-    print("Sposta il file htmlTemplate.py nella cartella desiderata")
+    print("Move html_template.py to the desired location")
